@@ -1,0 +1,22 @@
+\chapter{Marco Teórico}
+Dado que el enfoque central del proyecto es la interpretación de las señales eléctricas generadas por el cerebro, medidas por medio del Emotiv EPOC, es esencial reconocer el trabajo previo que se ha hecho con este sensor. A través de la lectura de diferentes artículos científicos, podemos extraer conocimiento aplicable a nuestro proyecto.
+
+Trabajos previos con este dispositivo, demuestran que es necesario entrenar el software de interpretación a las lecturas únicas de cada individuo, y este proceso resulta ser lento, pero relativamente consistente. Una prueba con sujetos entre 14 y 30 años arrojó que en promedio, este sensor acierta 72.65\% de las veces al interpretar las señales de los usuarios. Esta misma investigación sugiere que la interpretación del EPOC mejora al utilizarse para leer expresiones faciales. Esto abre otras posibilidades de control para nuestro brazo.
+
+Las señales eléctricas emitidas mediante el cerebro son de un orden muy pequeño, por lo que el dispositivo Emotiv EPOC procesa las señales en bruto y las amplifica, convirtiéndolas además a señales digitales que son utilizadas mediante los distintos softwares compatibles. Este proceso interno llevado a cabo por la diadema electrónica facilita la lectura y manipulación de los datos obtenidos, del mismo modo que el software facilita su interpretación. 
+Este proceso inicial de adquisición de datos se realiza internamente en el dispositivo EPOC, pero para poder recuperar estas señales en la computadora existe una librería en la interfaz de programación de aplicaciones de Emotiv, mediante la cual es posible comunicar el dispositivo con el software de LabView. 
+Es importante establecer un espectro de operación para cada una de las actividades producidas por el usuario, ya sean comandos mentales o movimientos faciales, de modo que puedan registrarse cambios entre actividad neutra y los gestos que deben generar movimiento en la prótesis. En un proyecto previo realizado en 2016 se encontró que para acciones como comandos mentales o ciertas expresiones faciales, la diferencia entre señales era casi imperceptible, sin embargo, para la actividad cerebral generada mediante parpadeos, la diferencia de voltaje era mayor, permitiendo capturar voltajes de origen electroencefalográfico y compararlos con los de origen electromiográfico, siendo mayor este último. Este hallazgo puede aplicarse en el proyecto para facilitar su desarrollo y obtener un control más preciso que al basar los movimientos en comandos mentales. Otra posibilidad es utilizar el giroscopio integrado en el EPOC, pues este presenta una gran respuesta en tiempo real. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
